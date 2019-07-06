@@ -14,6 +14,7 @@
             font-family: 'Russo One', sans-serif;
             background-color: #ffffff;
             color: #232323;
+            margin-bottom: 60px;
         }
 
         h1 {
@@ -22,6 +23,15 @@
 
         p {
             font-size: 18px;
+        }
+
+        #social {
+            text-align: right;
+        }
+
+        #social img {
+            width: 40px;
+            margin: 0 10px;
         }
 
         .blackbox {
@@ -35,8 +45,19 @@
 <body>
     <div class="blackbox">
         <div class="container">
-            <h1>solofende</h1>
-            <p>el increible <strong>duo</strong> de <strong>rock</strong></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>solofende</h1>
+                    <p>el increible <strong>duo</strong> de <strong>rock</strong></p>
+                </div>
+                <div id="social" class="col-md-6">
+                    <p>
+                        <a href="https://www.instagram.com/solofende" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC93CGYW0c6teBC0VMYFdYPA" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+                        <a href="https://www.facebook.com/solofendeofficialsite" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -48,12 +69,13 @@
             </div>
         </div>
     </div>
-    <div class="blackbox fixed-bottom">
+    <div id="player" class="blackbox fixed-bottom">
         <div class="container">
-            <audio controls autoplay="true" src="/audio/solofende-cucu.mp3" class="col-12">
-                Your browser does not support the
-                <code>audio</code> element.
-            </audio>
+            <div class="row">
+                <audio controls autoplay="true" src="/audio/solofende-cucu.mp3" class="col-12">
+                    Your browser does not support the <code>audio</code> element.
+                </audio>
+            </div>
         </div>
     </div>
 
